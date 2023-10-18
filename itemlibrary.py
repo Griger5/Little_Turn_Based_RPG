@@ -1,0 +1,67 @@
+import chara
+
+s1 = chara.Sword(0, "Short dagger", 1, 3, 10, 0)
+s2 = chara.Sword(1, "Gut knife", 2, 4, 10, 200)
+s3 = chara.Sword(2, "Curved dagger", 3, 7, 10, 350)
+s4 = chara.Sword(3, "Short sword", 5, 10, 10, 550)
+s5 = chara.Sword(4, "Khopesh", 8, 12, 12, 800)
+s6 = chara.Sword(5, "Gladius", 10, 18, 14, 1000)
+s7 = chara.Sword(6, "Battle sickle", 12, 22, 16, 1250)
+s8 = chara.Sword(7, "Broadsword", 16, 32, 18, 1500)
+s9 = chara.Sword(8, "Longsword", 20, 40, 20, 1700)
+
+a1 = chara.Axe(9, "Cleaver", 1, 3, 10, 0)
+a2 = chara.Axe(10, "Hand axe", 1, 6, 10, 200)
+a3 = chara.Axe(11, "Hatchet", 2, 8, 10, 350)
+a4 = chara.Axe(12, "Francesca", 3, 14, 10, 550)
+a5 = chara.Axe(13, "Axe", 5, 15, 12, 800)
+a6 = chara.Axe(14, "Battleaxe", 5, 23, 14, 1000)
+a7 = chara.Axe(15, "Broad axe", 7, 30, 16, 1250)
+a8 = chara.Axe(16, "Greataxe", 10, 40, 18, 1500)
+a9 = chara.Axe(17, "Bardiche", 15, 50, 20, 1700)
+
+m1 = chara.Mace(18, "Blackjack", 1, 4, 1, -20, 0)
+m2 = chara.Mace(19, "Club", 2, 6, 1, -20, 200)
+m3 = chara.Mace(20, "Hammer", 3, 8, 1, -20, 350)
+m4 = chara.Mace(21, "Spiked club", 6, 14, 1, -20, 550)
+m5 = chara.Mace(22, "Mace", 8, 20, 1, -19, 800)
+m6 = chara.Mace(23, "Flail", 10, 25, 1, -18, 1000)
+m7 = chara.Mace(24, "Flanged mace", 10, 40, 1, -17, 1250)
+m8 = chara.Mace(25, "Heavy mallet", 15, 45, 1, -16, 1500)
+m9 = chara.Mace(26, "Morning star", 20, 60, 1, -15, 1700)
+
+weaplist = [s1, s2, s3, s4, s5, s6 , s7, s8, s9, a1, a2, a3, a4, a5, a6, a7, a8, a9, m1, m2, m3, m4, m5, m6, m7, m8, m9]
+
+sh0 = chara.Shield(0, "", 0, 0, 0)
+sh1 = chara.Shield(1, "Planks", 60, 5, 300)
+sh2 = chara.Shield(2, "Buckler", 130, 10, 600)
+sh3 = chara.Shield(3, "Wooden shield", 240, 15, 975)
+sh4 = chara.Shield(4, "Reinforced Shield", 390, 20, 1250)
+sh5 = chara.Shield(5, "Silver shield", 570, 25, 1650)
+sh6 = chara.Shield(6, "Tower shield", 750, 30, 1900)
+
+h0 = chara.Helmet(0, "", 0, 0, 0)
+h1 = chara.Helmet(7, "Leather cap", 45, 10, 185)
+h2 = chara.Helmet(8, "Iron cap", 110, 12, 425)
+h3 = chara.Helmet(9, "Copper helmet", 220, 14, 620)
+h4 = chara.Helmet(10, "Bronze helmet", 360, 16, 925)
+h5 = chara.Helmet(11, "Centurion helmet", 510, 18, 1100)
+h6 = chara.Helmet(12, "Gladiator helmet", 700, 20, 1410)
+
+b0 = chara.Armor(0, "", 0, 0)
+b1 = chara.Armor(13, "Leather armour", 140, 330)
+b2 = chara.Armor(14, "Chainmail", 320, 550)
+b3 = chara.Armor(15, "Bronze plate", 520, 800)
+b4 = chara.Armor(16, "Segmented armour", 730, 1100)
+b5 = chara.Armor(17, "Scale armour", 930, 1650)
+b6 = chara.Armor(18, "Steel breastplate", 1150, 2000)
+
+bo0 = chara.Armor(0, "", 0, 0)
+bo1 = chara.Armor(19, "Sandals", 25, 100)
+bo2 = chara.Armor(20, "Leather boots", 100, 200)
+bo3 = chara.Armor(21, "Reinforced boots", 170, 350)
+bo4 = chara.Armor(22, "Silver boots", 260, 550)
+bo5 = chara.Armor(23, "Plate boots", 350, 770)
+bo6 = chara.Armor(24, "Steel greeves", 450, 900)
+
+armorlist = [sh0, sh1, sh2, sh3, sh4, sh5, sh6, h1, h2, h3, h4, h5, h6, b1, b2, b3, b4, b5, b6, bo1, bo2, bo3, bo4, bo5, bo6]

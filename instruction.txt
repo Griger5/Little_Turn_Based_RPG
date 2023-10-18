@@ -1,0 +1,18 @@
+Strength: Increases damage
+Dexterity: Increases hit and critical hit chances
+Agility: Decreases enemy's hit and critical hit chances
+Endurance: Increases health and stun chance when using "Defend"
+Battle IQ: Increases critical hit, block and counter chances
+Armor: Reduces damage taken
+
+Quick attack: High hit chance, low damage
+Normal attack: Normal hit chance, normal damage
+Power attack: Low hit chance, high damage
+Defend: Halves the damage taken, has a chance to stun the enemy for 2 turns
+Offensive Defense: Halves the damage taken, increases counter chance, 
+on a succesful counter stuns the enemy for 1 turn, and increases your next attack's
+hit chance
+
+Block: On a successful block, you don't take any damage
+Counter: On a succesful counter, you deal quick attack damage to the enemy
+Critical hit: On a critical hit, you deal double damage
