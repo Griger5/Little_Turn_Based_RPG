@@ -23,11 +23,11 @@ class GUI():
         self.main.geometry("1300x500")
 #############################################################################
         self.areanames = ["grimwood", "pirateharbour", "greatplains", "mistymountains", "wolfcave", "banditcamp", "barbariancamp", "ancienttemple"]
-        a = PhotoImage(file="turn_based_rpg\\pics\\"+self.areanames[i]+"\\1.png")
-        b = PhotoImage(file="turn_based_rpg\\pics\\"+self.areanames[i]+"\\2.png")
-        c = PhotoImage(file="turn_based_rpg\\pics\\"+self.areanames[i]+"\\3.png")
-        d = PhotoImage(file="turn_based_rpg\\pics\\"+self.areanames[i]+"\\4.png")
-        e = PhotoImage(file="turn_based_rpg\\pics\\"+self.areanames[i]+"\\5.png")
+        a = PhotoImage(file="pics\\"+self.areanames[i]+"\\1.png")
+        b = PhotoImage(file="pics\\"+self.areanames[i]+"\\2.png")
+        c = PhotoImage(file="pics\\"+self.areanames[i]+"\\3.png")
+        d = PhotoImage(file="pics\\"+self.areanames[i]+"\\4.png")
+        e = PhotoImage(file="pics\\"+self.areanames[i]+"\\5.png")
         enemyimages = [a, b, c, d, e]
         fightlist = []
         m = 5*math.floor(player.lvl/5)
@@ -44,7 +44,7 @@ class GUI():
             fightlist.append(fight)
         fightlist[player.lvl%5].config(state=ACTIVE)
         
-        with open("turn_based_rpg\\pics\\"+self.areanames[i]+"\\title.txt") as file:
+        with open("pics\\"+self.areanames[i]+"\\title.txt") as file:
             title = file.read()
         titlelabel = Label(self.main, text=title, font=("Arial", 20, "bold"), bg="#6e0d0d", fg="#fcb103", width=14)
         titlelabel.place(x=650, y=30, anchor=CENTER)
@@ -87,7 +87,7 @@ class GUI():
         self.stun = 0
         self.fight = Tk()
         self.fight.geometry("700x600")
-        image = PhotoImage(file="turn_based_rpg\\pics\\"+self.areanames[n]+"\\"+m+".png")
+        image = PhotoImage(file="pics\\"+self.areanames[n]+"\\"+m+".png")
         imagelabel = Label(self.fight, image=image)
         imagelabel.place(x=350, y=150, anchor=CENTER)
         self.displayname(self.fight)
@@ -304,10 +304,10 @@ class GUI():
             self.counterlabel.config(text=self.counterchance)
 
     def savesave(self):
-        with open("turn_based_rpg\\savefile.txt", "w") as file:
+        with open("savefile.txt", "w") as file:
             file.write(str(player.lvl)+","+str(player.str)+","+str(player.dex)+","+str(player.agi)+","+str(player.endu)+","+str(player.biq)+","+str(freepoints)+","+str(weap.id)+","+str(shield.id)+","+str(helmet.id)+","+str(breast.id)+","+str(boots.id)+","+startscreen.nickname+","+str(shops.gold))
     def loadsave(self):
-        with open("turn_based_rpg\\savefile.txt") as file:
+        with open("savefile.txt") as file:
             save=file.read().split(",")
             player.lvl = int(save[0])
             player.str = int(save[1])
