@@ -11,10 +11,10 @@ class Weapshop():
         self.gold = gold
         self.shop = Tk()
         self.shop.geometry("1180x500")
-        pic = PhotoImage(file="turn_based_rpg\\pics\\shop\\1.png")
+        pic = PhotoImage(file="pics\\shop\\1.png")
         #picList = []
         #for index in range(27):
-        #    picList.append(PhotoImage(file="turn_based_rpg\\pics\\shop\\"+str(index+1)+".png"))
+        #    picList.append(PhotoImage(file="pics\\shop\\"+str(index+1)+".png"))
         # in case of adding new pictures, delete the #'s
 
         self.itemframe = Frame(self.shop)
@@ -115,10 +115,10 @@ class Armorshop():
         self.gold = gold
         self.shop = Tk()
         self.shop.geometry("850x500")
-        pic = PhotoImage(file="turn_based_rpg\\pics\\shop\\1.png")
+        pic = PhotoImage(file="pics\\shop\\1.png")
         #picList = []
         #for index in range(24):
-        #    picList.append(PhotoImage(file="turn_based_rpg\\pics\\shop\\"+str(index+1)+".png"))
+        #    picList.append(PhotoImage(file="pics\\shop\\"+str(index+1)+".png"))
         # in case of adding new pictures, delete the #'s
 
         self.itemframe = Frame(self.shop)
