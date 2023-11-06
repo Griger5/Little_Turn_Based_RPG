@@ -41,10 +41,10 @@ class Start():
         frame = Frame(self.choicewin)
         frame.pack(side=TOP, anchor=CENTER)
         self.choice = IntVar()
-        pic = PhotoImage(file="turn_based_rpg\\pics\\shop\\1.png")
+        pic = PhotoImage(file="pics\\shop\\1.png")
         #picList = []
         #for index in range(3):
-        #    picList.append(PhotoImage(file="turn_based_rpg\\pics\\shop\\"+str(index+1)+".png"))
+        #    picList.append(PhotoImage(file="pics\\shop\\"+str(index+1)+".png"))
         # in case of adding new pictures, delete the #'s
         for index in range(3):
             item = Radiobutton(frame, image=pic, variable=self.choice, value=index, indicatoron=0, command=self.display)
@@ -69,7 +69,7 @@ class Start():
         self.start.destroy()
         self.instr = Tk()
         self.instr.geometry("600x500")
-        with open("turn_based_rpg\\instruction.txt") as file:
+        with open("instruction.txt") as file:
             text = file.read()
         label1 = Label(self.instr, text=text, font=("Arial", 12), justify=LEFT)
         label1.place(x=10, y=10, anchor=NW)
